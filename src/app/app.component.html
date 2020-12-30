@@ -1,0 +1,14 @@
+<h3>Datepicke Demo App</h3>
+<div>
+	<form [formGroup]="demoForm" (ngSubmit)="submitDemoForm()">
+		<div>
+			<label>Date</label>
+			<div class="tjs-date__picker-v2 tjs-date__picker-border tjs-date-range-input-group">
+				<input name="date" [options]="options" formControlName="date" placeholder="Date" angular-mydatepicker #dpStart="angular-mydatepicker" (click)="dpStart.toggleCalendar()"/>
+			</div>
+		</div>
+		<div style="margin-top: 30px;">
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</div>
